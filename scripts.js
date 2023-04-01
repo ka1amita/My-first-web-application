@@ -31,6 +31,25 @@ let imagesData = [{
 }
 ]
 
-let currentPhoto = 2 
+console.log(imagesData.length)
 
-$("#photo").attr("src", imagesData[currentPhoto].photo);
+
+let currentPhoto = 0 
+
+let loadPhoto = (photoNumber) => {
+    $("#photo").attr("src", imagesData[photoNumber].photo);
+}
+
+loadPhoto(currentPhoto)
+
+$("#right-arrow").click(() => {
+    currentPhoto++
+    if (currentPhoto >= imagesData.length) {currentPhoto = 0}
+    loadPhoto(currentPhoto)
+})
+
+$("#left-arrow").click(() => {
+    currentPhoto--
+    if (currentPhoto < 0) {currentPhoto = imagesData.length-1}
+    loadPhoto(currentPhoto)
+})
