@@ -1,0 +1,44 @@
+div.page {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.viewer {
+    display: flex;
+}
+
+
+img.image {
+    width: 100%;
+    height: 100%;
+}
+
+div.imageWithText {
+    position: relative;
+}
+
+button.navigate {
+    border: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.text {
+    color: white;
+    opacity: 50%;
+    font-family: 'Roboto', sans-serif;
+
+    padding: 10px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+h1.title {
+    margin: 10px;
+}
+
+p.story {
+    margin: 5px;
+}
